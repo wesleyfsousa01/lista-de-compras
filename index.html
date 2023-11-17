@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Js</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="/css-personalize/css_interno.css">
+
+    <!-- JS Bootstrap -->
+    <script defer src="/js/bootstrap.bundle.js"></script>
+</head>
+<body onload="carregarNaPagina()" onbeforeunload="salvarDados()" 
+    class="bg-secondary">
+
+<div class="container mt-5 bg-white">
+
+    <div class="row pt-5 d-flex align-items-center border-bottom border-dark-50 pb-3"
+        id="div_container_title"
+    >
+        
+        <div class="col" id="img_container">
+            <img src="/img/lista-de-afazeres.png" alt="">
+        </div>
+
+        <div class="col"
+            id="container_h1"
+        >
+            <h1 id="titulo">Lista de compras</h1>
+        </div>
+
+        <div class="col">
+            <button onclick="esconderFormTitulo()" class="btn btn-primary">
+                <i class="fas fa-edit"></i>
+            </button>
+        </div>
+
+        <div id="formTitle" class="hidden">
+            <form action="" class="form-control">
+                <label for="titleName"
+                    class="form-label"
+                >
+                Novo titulo
+            </label>
+
+            <div class="row d-flex">
+
+                <div class="col">
+                    <input type="text"
+                        id="titleName"
+                        class="form-control"
+                        placeholder="Insira um novo titulo"
+                    >
+
+                </div>
+
+                
+                <div class="col">
+                    
+                    <button type="button" class="btn btn-primary" onclick="salvarTitulo()"> 
+                        <i class="fas fa-save"></i>
+                    </button>
+            
+                </div>
+            </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="row mt-5 d-flex align-items-center border-bottom border-dark-50">
+
+        <div class="">
+            <form class="mb-3 form-control">
+                <div class="row ">
+                    <label for="itemName" 
+                        class="form-label"
+                        >
+                        Adionar item
+                    </label>
+    
+                    <input type="text" 
+                        class="col form-control" 
+                        id="itemName" 
+                        placeholder="Insira o nome do item"
+                    >
+                    <div class="col">
+                        <button class="btn btn-primary" onclick="adicionarLista()">
+                            <i class="fas fa-plus"></i>
+
+                        </button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    
+
+    <!-- <div 
+        class="row mt-5 border-bottom border-dark-50 div_container_ul"
+    >
+        <ul id= "listaItens"
+        >
+            
+        </ul>
+
+    </div>
+
+    <ul>
+        <li>
+            <div class="div_container_li">
+                <span>
+                    <div class="d-flex">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-primary">salvar</button>
+                        <button class="btn btn-primary">cancelar</button>
+                    </div>
+                </span>
+            </div>
+            
+        </li>
+    </ul>
+
+</div> -->
+   
+   <script src="/js/script.js"></script>    
+</body>
+</html>

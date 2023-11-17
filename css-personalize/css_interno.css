@@ -1,0 +1,91 @@
+
+body {
+    max-width: 750px;
+    margin: auto;
+}
+
+.hidden {
+    display: none !important;
+    background-color: #292626;
+}
+
+#div_container_title {
+
+}
+
+#container_h1 {
+    min-width: 70%;
+    width: 100%;
+}
+
+#div_container_title #titulo {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    color: #292626;
+}
+
+#img_container {
+    max-width: 80px;
+}
+
+#img_container img{
+    width: 100%;
+}
+
+
+#formTitle {
+    margin-top: 10px;
+}
+
+
+
+.div_container_ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#listaItens {
+
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+#listaItens li {
+    color: #504f4f;
+    font-weight: bold;
+    font-family: 'Verdana', Courier, monospace;
+    padding-left: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    border-bottom:solid 1px #d4d2d2;
+
+    -webkit-box-shadow: 1px 1px 1px 4px rgba(68, 67, 67, 0.19); 
+    box-shadow: 2px 2px 2px 1px rgba(88, 86, 86, 0.19);
+}
+
+.div_container_li {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.div_container_li span {
+    width: 80%;
+}
+
+.btn {
+    margin-left: 3px;
+}
+
+/* classe para itens marcados como checados */
+
+.checked-item {
+    background-color: rgb(160, 201, 240);
+    text-decoration: line-through;
+    color: #797474 !important;
+}
